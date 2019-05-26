@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style>
+.Divide {
+  background-color: Green;
+  border: none;
+  color: white;
+  padding: 137px 137px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.Multiply {
+  background-color: Red;
+  border: none;
+  color: white;
+  padding: 137px 137px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+} 
+.Add {
+  background-color: Orange;
+  border: none;
+  color: white;
+  padding: 137px 137px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.Subtract {
+  background-color: Blue;
+  border: none;
+  color: white;
+  padding: 137px 137px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.Circumference {
+  background-color: Green;
+  border: none;
+  color: white;
+  padding: 137px 137px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.Powers {
+  background-color: Red;
+  border: none;
+  color: white;
+  padding: 137px 137px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.AreaOfCircle {
+  background-color: Orange;
+  border: none;
+  color: white;
+  padding: 137px 137px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.Factorials {
+  background-color: Blue;
+  border: none;
+  color: white;
+  padding: 137px 137px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+  </style>
+
+  <button class = "Divide" onclick="Divide()">Division</button> 
+  <button class = "Multiply" onclick="Multiply()">Multiplication</button>
+  <button class = "Add" onclick="Add()">Addition</button> 
+  <button class = "Subtract" onclick="Subtract()">Subtraction</button> 
+  <button class = "Circumference" onclick="Circumference()">Circumfrnce</button> 
+  <button class = "Powers" onclick="Powers()">Powers</button> 
+  <button class = "AreaOfCircle" onclick="AreaOfCircle()">AreaOfCircle</button> 
+  <button class = "Factorials" onclick="factorial()">Factorial</button> 
+
+
+  <body background="black.jpg">
+<script>
+  //Part 1
+  function Divide (){
+    var dividend = prompt("What is the dividend?");
+    var divisor = prompt("What is the divisor");
+    var answer = alert(dividend / divisor)
+  }
+  function Multiply (){
+    var Number1 = prompt("What is the first number")
+    var Number2 = prompt("What is the second number")
+    var answer = alert(Number1 * Number2)
+  }
+    function Add (){
+    var Number1 = prompt("What is the first number")
+    var Number2 = prompt("What is the second number")
+    var answer = alert(parseInt(Number1) + parseInt(Number2));
+
+  }
+    function Subtract (){
+    var Number1 = prompt("What is the first number")
+    var Number2 = prompt("What is the second number")
+    var answer = alert(Number1 - Number2)
+  }
+  //Part 2
+  function Circumference (){
+    var radius = prompt("What is your radius?")
+    var answer = alert(2*3.14*radius)
+  }
+  function Powers (){
+    var Number1 = prompt("What is the base number? ")
+    var Number2 = prompt("What is the exponent? ")
+    var answer = alert(Math.pow(Number1,Number2))
+  }
+  function AreaOfCircle (){
+    var Number1 = prompt("What is your radius")
+    var answer = alert(3.14*(Number1*Number1))
+  }
+  
+function factorial () {
+let target = prompt("give us a number ");
+let res = 1;
+for (let i = 2; i <= target; i++)
+    res *= i;
+alert(res);
+
+}
+</script>
+</head>
+<body>
+</body>
+</html>
